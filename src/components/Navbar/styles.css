@@ -1,0 +1,19 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    background-color: #03045e;
+    padding: 1rem 2rem;
+}
+
+.navbar__buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+.navbar__buttons span:hover{
+    cursor: pointer;
+}
