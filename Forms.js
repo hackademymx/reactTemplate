@@ -1,12 +1,17 @@
-import React from 'react'
-import FormsSingup from './FormsSingup'
+import React , {useState} from "react";
+import FormsSingup from "./FormsSingup";
+import FormsSuccess from "./FormsSuccess"
 
 const Forms = () => {
-  return (
-    <div>
-        <FormsSingup />
-    </div>
-  )
-}
+    const[formIsSubmitted, setFormIsSubmitted] = useState(false)
+    const submitForm = () => {
+        setFormIsSubmitted(true);
+    }
+    return(
+        <div>
+            {!formIsSubmitted ? ( <FormsSingup submitForm={submitForm}/> 
+            ) : ( <FormsSuccess />)}</div>
+        )
+};
 
 export default Forms;

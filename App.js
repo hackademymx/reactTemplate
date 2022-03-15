@@ -1,13 +1,15 @@
-import './App.css';
-import Forms from './Componentes/Forms';
-import './Form.css';
+import React from "react";
+import Forms from "./Componentes/Forms";
+import "./App.css";
 
-function App() {
+
+const App = () => {
   return (
-    <div >
+    <div>
       <Forms />
+
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
