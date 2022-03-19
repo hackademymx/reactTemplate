@@ -71,11 +71,14 @@ export const Home = () => {
   }, []);
   return (
     <div className="page__container">
+      {/* If loading*/}
       {loading ? (
         <span>Cargando...</span>
       ) : error ? (
+        // Else if error
         <span>Ha ocurrido un error</span>
       ) : (
+        // else
         <>
           <h1>Listado de users</h1>
           <table>
